@@ -1,0 +1,173 @@
+/* style.css */
+
+/* Basic body styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #c5bba6;
+}
+
+/* Styling for the main container */
+.container {
+    width: 600px;
+    padding: 20px;
+    background-color: #f8f6f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styling for input and textarea elements */
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for the add task button */
+#addTaskBtn {
+    background-color: #978f7f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the add task button on hover */
+#addTaskBtn:hover {
+    background-color: #beb5a2;
+}
+
+/* Styling for the task list */
+.task-list {
+    margin-top: 20px;
+}
+
+/* Styling for each task item */
+.task-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for completed task items */
+.task-item.completed {
+    background-color: #ecdfc6;
+}
+
+/* Styling for task details */
+.task-item .task-details {
+    flex-grow: 1;
+}
+
+/* Styling for task action buttons (edit, delete, status) */
+.task-item .task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the edit button */
+.task-item .task-actions .edit-btn {
+    background-color: #ffc107;
+}
+
+/* Styling for the edit button on hover */
+.task-item .task-actions .edit-btn:hover {
+    background-color: #d89f06;
+}
+
+/* Styling for the delete button */
+.task-item .task-actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Styling for the delete button on hover */
+.task-item .task-actions .delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Styling for the status button (complete/pending) */
+.task-item .task-actions .status-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Styling for the status button on hover */
+.task-item .task-actions .status-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Styling for the filter section */
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for filter buttons */
+.filter-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for filter buttons on hover */
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styling for the active filter button */
+.filter-btn.active {
+    background-color: #978f7f;
+    color: white;
+}
+
+/* Styling for the active filter button on hover */
+.filter-btn.active:hover {
+    background-color: #beb5a2;
+}
+
+/* Styling for the search section */
+.search-section {
+    margin-bottom: 20px;
+}
+
+/* Styling for the search input */
+#searchTask {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

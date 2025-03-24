@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management</h1>
+        <div class="input-section">
+            <input type="text" id="taskName" placeholder="Task Name">
+            <textarea id="taskDescription" placeholder="Task Description"></textarea>
+            <input type="date" id="taskDate">
+            <button id="addTaskBtn"><b>Add Task</b></button>
+        </div>
+        <div class="filter-section">
+            <button class="filter-btn" data-status="all"><b>All</b></button>
+            <button class="filter-btn" data-status="pending"><b>Pending</b></button>
+            <button class="filter-btn" data-status="completed"><b>Completed</b></button>
+        </div>
+        <div class="search-section">
+            <input type="text" id="searchTask" placeholder="Search Tasks">
+        </div>
+        <div class="task-list" id="taskList">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
